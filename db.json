@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "name": "CA",
+      "description": "Online ACCA courses by the best faculty.",
+      "noOfCourses": 62,
+      "enrollments": 155651
+    },
+    {
+      "name": "ACCA",
+      "description": "Online ACCA courses by the best faculty.",
+      "noOfCourses": 12,
+      "enrollments": 8245
+    }
+  ]
+}
