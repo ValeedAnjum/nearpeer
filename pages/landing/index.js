@@ -1,11 +1,20 @@
 import React from "react";
-import Navbar from "../../src/components/navbar/Navbar";
 import LandingPageCom from "../../src/components/landingPage/LandingPage";
 
-const LandingPage = () => {
+export const getStaticProps = async () => {
+  const courses = await fetch("http://localhost:4000/courses");
+  const data = await courses.json();
+
+  return {
+    props: {
+      courses: data,
+    },
+  };
+};
+const LandingPage = ({ courses }) => {
   return (
     <>
-      <LandingPageCom />
+      <LandingPageCom courses={courses} />
     </>
   );
 };

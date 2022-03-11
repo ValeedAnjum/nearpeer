@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import Link from "next/link";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 
@@ -8,6 +9,9 @@ const useStyles = makeStyles(() => {
       backgroundColor: "white",
       padding: "1rem",
       borderRadius: "2px",
+      overflow: "hidden",
+      height: "100%",
+      justifyContent: "space-evenly",
       "&:hover": {
         backgroundColor: "rgb(7, 177, 77, 0.42)",
         userSelect: "none",
@@ -35,39 +39,43 @@ const useStyles = makeStyles(() => {
     },
   };
 });
-const CategoryCart = () => {
+const CategoryCart = ({
+  course: { name, description, noOfCourses, enrollments },
+}) => {
   const classes = useStyles();
   return (
-    <Grid container direction="column" className={classes.CategoryCart}>
-      <Grid item className={classes.cartHeading}>
-        CA
-      </Grid>
-      <Grid item className={classes.cartParagraph}>
-        Online CA Courses by the best faculty of Pakistan at one place.
-      </Grid>
-      <Grid item container direction="row">
-        <Grid
-          className={classes.infoHeading}
-          item
-          sm={6}
-          container
-          direction="column"
-        >
-          <Grid item>66</Grid>
-          <Grid item>COURSES</Grid>
+    <Link href={name.toLowerCase().split(" ").join("")}>
+      <Grid container direction="column" className={classes.CategoryCart}>
+        <Grid item className={classes.cartHeading}>
+          {name}
         </Grid>
-        <Grid
-          className={classes.infoHeading}
-          item
-          sm={6}
-          container
-          direction="column"
-        >
-          <Grid item>150718</Grid>
-          <Grid item>ENROLLMENTS</Grid>
+        <Grid item className={classes.cartParagraph}>
+          {description}
+        </Grid>
+        <Grid item container direction="row">
+          <Grid
+            className={classes.infoHeading}
+            item
+            sm={6}
+            container
+            direction="column"
+          >
+            <Grid item>{noOfCourses}</Grid>
+            <Grid item>COURSES</Grid>
+          </Grid>
+          <Grid
+            className={classes.infoHeading}
+            item
+            sm={6}
+            container
+            direction="column"
+          >
+            <Grid item>{enrollments}</Grid>
+            <Grid item>ENROLLMENTS</Grid>
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </Link>
   );
 };
 

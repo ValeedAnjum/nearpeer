@@ -6,10 +6,10 @@ const ThemeCart = () => {
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
         (key) => (
           <Grid key={key} item sm={3}>
-            <img
+            {/* <img
               style={{ width: "100%" }}
               src="https://cdn.psdrepo.com/images/2x/free-business-card-mockup-download-g4.jpg"
-            />
+            /> */}
             <div>
               <span></span>
               <a>Mockup Templates</a>

@@ -2,15 +2,121 @@
   "courses": [
     {
       "name": "CA",
-      "description": "Online ACCA courses by the best faculty.",
+      "description": "Online CA courses by the best faculty.",
       "noOfCourses": 62,
-      "enrollments": 155651
+      "enrollments": 155651,
+      "id": 1
     },
     {
       "name": "ACCA",
       "description": "Online ACCA courses by the best faculty.",
       "noOfCourses": 12,
-      "enrollments": 8245
+      "enrollments": 8245,
+      "id": 2
+    },
+    {
+      "name": "MDCAT",
+      "description": "No need for academies anymore. All preparation material in your pocket!",
+      "noOfCourses": 10,
+      "enrollments": 60142,
+      "id": 3
+    },
+    {
+      "name": "University Courses",
+      "description": "Get A+ grades with online courses taught by your own Nearpeers!",
+      "noOfCourses": 119,
+      "enrollments": 148688,
+      "id": 4
+    },
+    {
+      "name": "Universities Entry Tests",
+      "description": "Prepare for LUMS, NUST, LSE, GIKI and other Entry Tests online.",
+      "noOfCourses": 18,
+      "enrollments": 26819,
+      "id": 5
+    },
+    {
+      "name": "CSS",
+      "description": "Best online courses for CSS preparation.",
+      "noOfCourses": 37,
+      "enrollments": 263893,
+      "id": 6
+    },
+    {
+      "name": "FSc & Matric",
+      "description": "Best online courses for FSc preparation.",
+      "noOfCourses": 50,
+      "enrollments": 112874,
+      "id": 7
+    },
+    {
+      "name": "O'Level & A'Level",
+      "description": "Study from the best and Ensure A* in your CAIEs.",
+      "noOfCourses": 19,
+      "enrollments": 27403,
+      "id": 8
+    }
+  ],
+  "subcourses": [
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/190978/Sir_Rehan_s-1636108746027.jpeg",
+      "title": "01 PRC by Sir Rehan Sarwar ",
+      "price": "PKR 9000",
+      "id": 1
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/1503/WhatsApp_Image_2021-10-20_at_5-27-06_PM-jpeg-1634733366469.jpeg",
+      "title": "02 PRC QMT by Sir Jahanzaib ",
+      "price": "PKR 8000",
+      "id": 2
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/263566/WhatsApp_Image_2021-10-20_at_5-27-05_PM-jpeg-1634733523530.jpeg",
+      "title": "02 PRC QMT by Sir Qasim Ali Shaha ",
+      "price": "PKR 9500",
+      "id": 3
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/266584/PRC_3_Sir_Adeel-1636109794814.jpeg",
+      "title": "03 PRC by Sir Muhammad Adeel  ",
+      "price": "PKR 9000",
+      "id": 4
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/1503/WhatsApp_Image_2021-10-20_at_5-27-06_PM_(2)-jpeg-1634733410987.jpeg",
+      "title": "04 PRC QMT by Sir Jahanzaib ",
+      "price": "PKR 9300",
+      "id": 5
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/1503/caf_1_far_1_by_jz_new-1631786911350.PNG",
+      "title": "01 PRC by Sir Rehan Sarwar ",
+      "price": "PKR 9000",
+      "id": 6
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/269064/WhatsApp_Image_2022-02-25_at_5-13-40_PM-jpeg-1645791250943.jpeg",
+      "title": "02 PRC QMT by Sir Jahanzaib ",
+      "price": "PKR 8000",
+      "id": 7
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/1503/Pre_FAR_1-1641618943059.png",
+      "title": "02 PRC QMT by Sir Qasim Ali Shaha ",
+      "price": "PKR 9500",
+      "id": 8
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/266584/PRC_3_Sir_Adeel-1636109794814.jpeg",
+      "title": "03 PRC by Sir Muhammad Adeel  ",
+      "price": "PKR 9000",
+      "id": 9
+    },
+    {
+      "img": "https://nearpeer-imagees.s3.amazonaws.com/291597/WhatsApp_Image_2022-02-25_at_12-56-26_PM-jpeg-1645775869675.jpeg",
+      "title": "04 PRC QMT by Sir Jahanzaib ",
+      "price": "PKR 9300",
+      "id": 10
     }
   ]
 }

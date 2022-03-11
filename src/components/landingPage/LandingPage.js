@@ -1,13 +1,18 @@
-import { Grid } from "@mui/material";
+import { Grid, useTheme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import CategoryCart from "./CategoryCart";
 const useStyles = makeStyles(() => {
+  const theme = useTheme();
+  // console.log(theme.breakpoints.down('sm'));
   return {
     landingPage: {
       backgroundColor: "#16b9d6",
       height: "100vh",
       flexWrap: "nowrap",
+      [theme.breakpoints.down("sm")]: {
+        height: "auto",
+      },
     },
     h1: {
       margin: "0",
@@ -21,8 +26,9 @@ const useStyles = makeStyles(() => {
     },
   };
 });
-const LandingPage = () => {
+const LandingPage = ({ courses }) => {
   const classes = useStyles();
+
   return (
     <Grid container direction="column" className={classes.landingPage}>
       <Grid item container direction="column" alignItems="center">
@@ -33,12 +39,23 @@ const LandingPage = () => {
       </Grid>
       <Grid item>
         <Grid container justifyContent="center">
-          <Grid item container sm={10} justifyContent="center" spacing={1}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((key) => (
-              <Grid item sm={3} key={key}>
-                <CategoryCart />
-              </Grid>
-            ))}
+          <Grid
+            item
+            container
+            sm={10}
+            xs={12}
+            justifyContent="center"
+            spacing={1}
+          >
+            {courses &&
+              courses.length > 0 &&
+              courses.map((course) => {
+                return (
+                  <Grid item sm={3} xs={11} key={course.id}>
+                    <CategoryCart course={course} />
+                  </Grid>
+                );
+              })}
           </Grid>
         </Grid>
       </Grid>
